@@ -1,37 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polina.AI</title>
+    <title>Polina.AI — AI Lifehacks That Print Money</title>
+    <meta name="description" content="AI lifehacks that actually print money | No-code agents & daily breakthroughs from Warsaw 🔥">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- X (Twitter) Embed Script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .hero-bg {
+            background: radial-gradient(at center bottom, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
 </head>
-<body>
-    <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
-        <div class="text-center max-w-2xl">
-            <h1 class="text-6xl md:text-7xl font-bold text-gray-900 mb-2">
-                Polina.AI
-            </h1>
-            <p class="text-xl text-gray-600 mb-6">
-                @zhulkevskaya
-            </p>
-            
-            <div class="mb-8 inline-block bg-blue-50 px-6 py-3 rounded-lg border border-blue-200 shadow-sm">
-                <div class="flex items-center justify-center gap-2">
-                    <span class="text-blue-500 text-xl">✓</span>
-                    <span class="text-blue-600 font-semibold">Premium Account</span>
-                </div>
-                <p class="text-blue-500 text-sm mt-2">Premium since June 2026</p>
+<body class="bg-black text-white overflow-x-hidden">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center text-xl font-bold">P</div>
+                <span class="text-2xl font-semibold tracking-tighter">Polina.AI</span>
             </div>
-            
-            <p class="text-lg md:text-xl text-gray-800 leading-relaxed mb-8">
-                AI lifehacks that actually print money | No-code agents & daily breakthroughs | Fresh plays dropped from Warsaw 🔥
-            </p>
-            
-            <a href="https://x.com/zhulkevskaya" target="_blank" rel="noopener noreferrer" class="inline-block bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200">
-                Follow on Twitter/X
+            <a href="https://x.com/zhulkevskaya" target="_blank"
+               class="flex items-center gap-2 px-5 py-2.5 bg-white text-black rounded-3xl font-semibold hover:scale-105 transition-all">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>@zhulkevskaya</span>
             </a>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-screen hero-bg flex items-center pt-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-6 py-2 bg-white/5 rounded-3xl mb-8 border border-white/10">
+                <span class="text-emerald-400">●</span>
+                <span class="font-medium">Live from Warsaw • June 2026</span>
+            </div>
+            
+            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+                AI lifehacks<br>that <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">actually print money</span>
+            </h1>
+            
+            <p class="text-2xl md:text-3xl text-gray-400 max-w-3xl mx-auto mb-12">
+                No-code agents • Daily breakthroughs • Fresh plays dropped from Warsaw 🔥
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://x.com/zhulkevskaya" target="_blank"
+                   class="px-10 py-5 bg-white text-black rounded-3xl text-xl font-semibold flex items-center justify-center gap-3 hover:scale-105 transition-all">
+                    <i class="fa-brands fa-x-twitter text-2xl"></i>
+                    Follow on X
+                </a>
+                
+                <a href="#latest" 
+                   class="px-10 py-5 border border-white/30 hover:border-white/60 rounded-3xl text-xl font-medium flex items-center justify-center gap-3 transition-all">
+                    See Latest Drops ↓
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Drops – Dynamic X Widget -->
+    <section id="latest" class="py-24 border-t border-white/10">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-5xl font-semibold tracking-tighter mb-4 text-center">Latest Drops from Warsaw</h2>
+            <p class="text-center text-gray-400 mb-8">Real-time updates from <span class="text-cyan-400">@zhulkevskaya</span> — always fresh</p>
+            
+            <!-- Glass container for the widget -->
+            <div class="glass rounded-3xl p-6 md:p-8 shadow-2xl max-w-4xl mx-auto">
+                <a class="twitter-timeline" 
+                   href="https://x.com/zhulkevskaya"
+                   data-theme="dark"
+                   data-height="720"
+                   data-width="100%"
+                   data-chrome="noheader nofooter noscrollbar"
+                   data-tweet-limit="6">
+                    Loading latest drops from @zhulkevskaya...
+                </a>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://x.com/zhulkevskaya" target="_blank"
+                   class="inline-flex items-center gap-3 px-8 py-4 border border-white/30 hover:border-cyan-400 rounded-3xl transition-all text-sm">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <span>Follow @zhulkevskaya for even more daily plays</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-white/10">
+        <div class="max-w-5xl mx-auto px-6 text-center text-gray-500">
+            <p class="text-lg">Made with 🔥 in Warsaw</p>
+            <p class="text-xs mt-2">Polina Zhulkevskaya © 2026</p>
+        </div>
+    </footer>
 </body>
 </html>
